@@ -16,11 +16,11 @@
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
 
-      <Image
-                x:Name="HeroImage"
-                Grid.ColumnSpan="2"
+			<Image
+								x:Name="HeroImage"
+								Grid.ColumnSpan="2"
 				Source="hero.jpg"
-                Aspect="AspectFill"
+								Aspect="AspectFill"
 				HorizontalOptions="FillAndExpand"
 				VerticalOptions ="FillAndExpand"/>
 			<Button 

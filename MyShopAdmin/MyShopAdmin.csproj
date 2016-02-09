@@ -40,6 +40,7 @@
     <Compile Include="AdminApp.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\FeedbackListViewModel.cs" />
     <Compile Include="Views\FeedbackListPage.xaml.cs">
       <DependentUpon>FeedbackListPage.xaml</DependentUpon>
@@ -170,11 +171,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyShop\MyShop.csproj">
-      <Project>{B9A7FA37-E8D6-480B-AB8C-878C33E2D300}</Project>
+      <Project>{b9a7fa37-e8d6-480b-ab8c-878c33e2d300}</Project>
       <Name>MyShop</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Views\FeedbackListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

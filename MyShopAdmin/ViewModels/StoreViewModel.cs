@@ -4,11 +4,11 @@ using Xamarin.Forms;
 
 namespace MyShopAdmin
 {
-	public class StoreViewModel : BaseViewModel
-	{
-		public StoreViewModel  (Page page) : base (page)
-		{
-		}
-	}
+    public class StoreViewModel : ViewModelBase
+    {
+        public StoreViewModel(Page page) : base(page)
+        {
+        }
+    }
 }
 

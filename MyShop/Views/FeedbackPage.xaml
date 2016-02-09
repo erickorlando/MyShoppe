@@ -5,37 +5,37 @@
 	x:Class="MyShop.FeedbackPage"
 	Title="{Binding Title}"
 	IsBusy="{Binding IsBusy}">
-    <ContentPage.Content>
-        <StackLayout>
-            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" IsVisible="{Binding IsBusy}">
+		<ContentPage.Content>
+				<StackLayout>
+						<StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" IsVisible="{Binding IsBusy}">
 		<ActivityIndicator  HorizontalOptions="Center"
-						   IsRunning="{Binding IsBusy}"
-						   IsVisible="{Binding IsBusy}"/>
-	    <Label HorizontalOptions="Center"
-	    	 VerticalOptions="Center" 
-	    	 Text="{Binding Message}"/>
+							 IsRunning="{Binding IsBusy}"
+							 IsVisible="{Binding IsBusy}"/>
+			<Label HorizontalOptions="Center"
+				 VerticalOptions="Center" 
+				 Text="{Binding Message}"/>
 	</StackLayout>
 	<ScrollView VerticalOptions="FillAndExpand">
 	<Grid VerticalOptions="FillAndExpand">
-            <Grid.ColumnSpacing>
-                <OnIdiom x:TypeArguments="x:Double">
-                    <OnIdiom.Phone>20</OnIdiom.Phone>
-                    <OnIdiom.Tablet>40</OnIdiom.Tablet>
-                </OnIdiom>
-            </Grid.ColumnSpacing>
-            <Grid.RowSpacing>
-                <OnIdiom x:TypeArguments="x:Double">
-                    <OnIdiom.Phone>10</OnIdiom.Phone>
-                    <OnIdiom.Tablet>20</OnIdiom.Tablet>
-                </OnIdiom>
-            </Grid.RowSpacing>
-            <Grid.Padding>
-                <OnIdiom x:TypeArguments="Thickness">
-                    <OnIdiom.Phone>10,10,10,0</OnIdiom.Phone>
-                    <OnIdiom.Tablet>20,20,20,0</OnIdiom.Tablet>
-                </OnIdiom>
-            </Grid.Padding>
-            <Grid.RowDefinitions>
+						<Grid.ColumnSpacing>
+								<OnIdiom x:TypeArguments="x:Double">
+										<OnIdiom.Phone>20</OnIdiom.Phone>
+										<OnIdiom.Tablet>40</OnIdiom.Tablet>
+								</OnIdiom>
+						</Grid.ColumnSpacing>
+						<Grid.RowSpacing>
+								<OnIdiom x:TypeArguments="x:Double">
+										<OnIdiom.Phone>10</OnIdiom.Phone>
+										<OnIdiom.Tablet>20</OnIdiom.Tablet>
+								</OnIdiom>
+						</Grid.RowSpacing>
+						<Grid.Padding>
+								<OnIdiom x:TypeArguments="Thickness">
+										<OnIdiom.Phone>10,10,10,0</OnIdiom.Phone>
+										<OnIdiom.Tablet>20,20,20,0</OnIdiom.Tablet>
+								</OnIdiom>
+						</Grid.Padding>
+						<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
@@ -62,7 +62,7 @@
 			x:Name="PickerStore"
 			Grid.Row="0"
 			Grid.Column="1">
-        </Picker>
+				</Picker>
 
 		<Label
 			Grid.Row="1"
@@ -77,15 +77,15 @@
 			Grid.Column="1"
 			SelectedIndex="{Binding ServiceType, Mode=TwoWay}">
 			 <Picker.Items>
-	            <x:String>Xamarin Platform</x:String> 
-	            <x:String>Xamarin Test Cloud</x:String>
-                <x:String>Xamarin Insights</x:String>
-                <x:String>Xamarin.Forms</x:String>
-                <x:String>Xamarin Studio</x:String>
-	            <x:String>Xamarin for Visual Studio</x:String>
-	            <x:String>Other</x:String>
-	        </Picker.Items>
-        </Picker>
+							<x:String>Xamarin Platform</x:String> 
+							<x:String>Xamarin Test Cloud</x:String>
+								<x:String>Xamarin Insights</x:String>
+								<x:String>Xamarin.Forms</x:String>
+								<x:String>Xamarin Studio</x:String>
+							<x:String>Xamarin for Visual Studio</x:String>
+							<x:String>Other</x:String>
+					</Picker.Items>
+				</Picker>
 
 		<Label
 			Grid.Row="2"
@@ -114,19 +114,19 @@
 			Grid.Column="1"
 			SelectedIndex="{Binding Rating, Mode=TwoWay}">
 			 <Picker.Items>
-	            <x:String>0 - Not so great</x:String>
-	            <x:String>1</x:String> 
-	            <x:String>2</x:String>
-	            <x:String>3</x:String>
-	            <x:String>4</x:String>
-	            <x:String>5 - Average</x:String>
-	            <x:String>6</x:String> 
-	            <x:String>7</x:String>
-	            <x:String>8</x:String>
-	            <x:String>9</x:String>
-	            <x:String>10 - Amazing</x:String>
-	        </Picker.Items>
-        </Picker>
+							<x:String>0 - Not so great</x:String>
+							<x:String>1</x:String> 
+							<x:String>2</x:String>
+							<x:String>3</x:String>
+							<x:String>4</x:String>
+							<x:String>5 - Average</x:String>
+							<x:String>6</x:String> 
+							<x:String>7</x:String>
+							<x:String>8</x:String>
+							<x:String>9</x:String>
+							<x:String>10 - Amazing</x:String>
+					</Picker.Items>
+				</Picker>
 
 
 
@@ -152,7 +152,7 @@
 			TextColor="#3498DB"
 			VerticalOptions="Center"  />
 
-        
+				
 		<Entry 
 			Grid.Row="5"
 			Grid.Column="1"
@@ -182,8 +182,8 @@
 
 		<Editor 
 			Grid.Row="7"
-      Grid.RowSpan="2"
-      Grid.Column="1"
+			Grid.RowSpan="2"
+			Grid.Column="1"
 			Grid.ColumnSpan="1"
 			HeightRequest="150"
 			Text="{Binding Text}"
